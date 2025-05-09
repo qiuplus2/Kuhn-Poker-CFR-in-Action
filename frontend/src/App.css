@@ -1,0 +1,407 @@
+.app {
+  font-family: 'Roboto', Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.app-header p {
+  color: #7f8c8d;
+  margin: 10px 0;
+}
+
+.header-buttons {
+  margin-top: 15px;
+}
+
+.button-toggle {
+  background-color: #f5f5f5;
+  color: #444;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.button-toggle:hover {
+  background-color: #e0e0e0;
+}
+
+.button-toggle.active {
+  background-color: #722ed1;
+  color: white;
+  border-color: #722ed1;
+}
+
+.stats {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.analysis-container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+}
+
+.game-history-container {
+  background-color: white;
+}
+
+.game-history-container h3 {
+  margin: 0 0 15px 0;
+  padding: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.game-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.game-history-table th,
+.game-history-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.game-history-table th {
+  font-weight: 500;
+  color: #666;
+}
+
+.game-history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bet-action {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.pass-action {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.no-history {
+  text-align: center;
+  padding: 15px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Performance Results styles */
+.stats-tables {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-table {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.stats-table h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.stats-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stats-table td {
+  padding: 8px 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.stats-table td:first-child {
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #666;
+}
+
+.button-primary {
+  background-color: #1890ff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.button-primary:hover:not(:disabled) {
+  background-color: #147dd8;
+  transform: translateY(-1px);
+}
+
+.button-primary:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.button-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.demo-button {
+  background-color: #722ed1;
+}
+
+.demo-button:hover:not(:disabled) {
+  background-color: #531dab;
+}
+
+/* Remove all card-related styles from App.css since they're now in PokerTable.css */
+
+.card {
+  width: 80px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
+  font-family: 'Georgia', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  transition: transform 0.4s ease;
+  user-select: none;
+}
+
+.face-down {
+  background: repeating-linear-gradient(
+    45deg,
+    #007bff,
+    #007bff 10px,
+    #0056b3 10px,
+    #0056b3 20px
+  );
+  color: transparent;
+}
+
+.card.face-up .corner {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card .corner.top-left {
+  top: 6px;
+  left: 6px;
+}
+
+.card .corner.bottom-right {
+  bottom: 6px;
+  right: 6px;
+  transform: rotate(180deg);
+}
+
+.card .center {
+  font-size: 40px;
+}
+
+.card-face {
+  font-family: 'Georgia', serif;
+  color: #000;
+}
+
+.card-face.J {
+  color: crimson;
+}
+
+.card-face.Q {
+  color: black;
+}
+
+.card-face.K {
+  color: goldenrod;
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.stats-container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.stats-container h3 {
+  margin-top: 0;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.stats {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.thermometer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.thermometer-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percentage-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.bot-label {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.thermometer {
+  width: 40px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ccc;
+}
+
+.thermometer .fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  transition: height 0.4s ease-in-out;
+}
+
+.thermometer.green .fill {
+  background-color: #4caf50;
+}
+
+.thermometer.red .fill {
+  background-color: #f44336;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .game-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-controls, .game-area, .analysis-container {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .thermometer-wrapper {
+    gap: 15px;
+  }
+  
+  .thermometer {
+    width: 30px;
+    height: 120px;
+  }
+}

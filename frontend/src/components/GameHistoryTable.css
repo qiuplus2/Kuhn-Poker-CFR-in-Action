@@ -1,0 +1,52 @@
+/* GameHistoryTable.css */
+.game-history-container {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.game-history-container h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.game-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.game-history-table th,
+.game-history-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.game-history-table th {
+  background-color: #f9f9f9;
+  font-weight: 500;
+}
+
+.game-history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bet-action {
+  color: #1890ff;
+  font-weight: bold;
+}
+
+.pass-action {
+  color: #52c41a;
+}
+
+.no-history {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+}

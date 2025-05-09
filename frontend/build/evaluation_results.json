@@ -1,0 +1,9 @@
+{
+  "cfr_vs_stupid": {
+    "avg_payoff": -0.051,
+    "total_games": 1000
+  },
+  "training_time": {
+    "cfr": 0
+  }
+}

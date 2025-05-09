@@ -1,0 +1,73 @@
+/* ResultsChart.css */
+.results-chart {
+  margin-top: 20px;
+}
+
+.chart-placeholder {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.chart-placeholder h3 {
+  margin: 0 0 15px 0;
+  padding: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.results-text {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.result-bars {
+  margin-top: 20px;
+}
+
+.result-item {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.bar-container {
+  height: 30px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.cfr-bar {
+  background-color: #3f51b5;
+}
+
+.mccfr-bar {
+  background-color: #f50057;
+}
+
+.bar-container span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}

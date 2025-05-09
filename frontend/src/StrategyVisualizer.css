@@ -1,0 +1,88 @@
+.strategy-visualizer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .strategy-visualizer h3 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .strategy-card {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .info-set-description {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .probability-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .probability-bar-container {
+    width: 100%;
+  }
+  
+  .probability-label {
+    font-size: 12px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+  }
+  
+  .probability-bar {
+    height: 12px;
+    background-color: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .pass-bar {
+    height: 100%;
+    background-color: #52c41a;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .bet-bar {
+    height: 100%;
+    background-color: #1890ff;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .strategy-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .strategy-grid {
+      grid-template-columns: 1fr;
+    }
+  }

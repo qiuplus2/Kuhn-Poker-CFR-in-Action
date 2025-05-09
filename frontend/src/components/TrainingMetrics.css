@@ -1,0 +1,169 @@
+.training-metrics {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .training-metrics h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .training-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 120px;
+    font-size: 14px;
+  }
+  
+  .button-primary {
+    background-color: #1890ff;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .button-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .error-message {
+    background-color: #fff2f0;
+    border: 1px solid #ffccc7;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: #f5222d;
+    font-size: 14px;
+  }
+  
+  /* 可视化器样式 */
+  .strategy-visualizer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .visualizer-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .metric-selector,
+  .info-set-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .metric-selector label,
+  .info-set-selector label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .metric-selector select,
+  .info-set-selector select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    min-width: 200px;
+  }
+  
+  .chart-container {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+  }
+  
+  .chart-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+  }
+  
+  .loading, .no-data {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    font-size: 16px;
+  }
+  
+  /* App.js 需要的按钮样式 */
+  .button-toggle {
+    background-color: #f5f5f5;
+    color: #444;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .button-toggle:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .button-toggle.active {
+    background-color: #722ed1;
+    color: white;
+    border-color: #722ed1;
+  }
+  
+  .header-buttons {
+    margin-top: 15px;
+  }

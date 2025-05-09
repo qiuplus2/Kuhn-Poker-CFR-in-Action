@@ -1,0 +1,65 @@
+/* StrategyVisualizer.css */
+.strategy-visualizer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .visualizer-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .metric-selector,
+  .info-set-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .metric-selector label,
+  .info-set-selector label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .metric-selector select,
+  .info-set-selector select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    min-width: 200px;
+  }
+  
+  .chart-container {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+  }
+  
+  .chart-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }

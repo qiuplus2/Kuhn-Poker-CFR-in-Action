@@ -6,7 +6,7 @@ An interactive visualization and implementation of **Counterfactual Regret Minim
 ![Python](https://img.shields.io/badge/Python-3.11+-green)
 ![React](https://img.shields.io/badge/React-18.2-61dafb)
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates how CFR converges to a Nash Equilibrium strategy in Kuhn Poker. Watch in real-time as the algorithm learns optimal play against a simple "Stupid Bot" that always bets.
 
@@ -26,7 +26,7 @@ Counterfactual Regret Minimization is an algorithm that:
 3. Updates strategy based on cumulative regrets
 4. Converges to Nash Equilibrium over iterations
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Kuhn-Poker-CFR-in-Action/
@@ -53,7 +53,7 @@ Kuhn-Poker-CFR-in-Action/
 └── README.md                  # This file
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ For interactive play:
 python main.py --interactive
 ```
 
-## 🎮 Features
+## Features
 
 ### Interactive Gameplay
 - Watch CFR Bot vs Stupid Bot matches
@@ -128,7 +128,7 @@ python main.py --interactive
 - Probability distributions for Pass/Bet actions
 - Comparison with optimal play
 
-## 📊 API Endpoints
+## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -136,49 +136,19 @@ python main.py --interactive
 | `/api/metrics` | GET | Get training history metrics |
 | `/api/play` | POST | Play a game against CFR bot |
 
-## 🧠 How CFR Works in This Implementation
 
-```python
-# Simplified CFR loop
-for iteration in range(10000):
-    cards = shuffle([1, 2, 3])[:2]  # Deal 2 cards
-    
-    # Traverse game tree, computing:
-    # - Strategy from regret-matching
-    # - Counterfactual values for each action
-    # - Regret for not taking optimal action
-    
-    cfr_traversal(cards, history=[], p0=1.0, p1=1.0)
-```
 
-The algorithm maintains:
-- **Regret Sum**: Accumulated regret for each action at each decision point
-- **Strategy Sum**: Weighted sum of strategies played
-- **Average Strategy**: Final Nash Equilibrium approximation
-
-## 📈 Expected Results
-
-After 10,000 iterations, CFR converges to the Nash Equilibrium:
-
-| Card | Situation | Optimal Play |
-|------|-----------|--------------|
-| King (3) | Any | Always Bet |
-| Queen (2) | First to act | Bet ~1/3, Pass ~2/3 |
-| Queen (2) | After opponent bets | Call ~1/3 |
-| Jack (1) | First to act | Always Pass |
-| Jack (1) | After opponent passes | Bet ~1/3 (bluff) |
-
-## 🛠️ Technologies
+## Technologies
 
 - **Backend**: Python, Flask, NumPy, Flask-CORS
 - **Frontend**: React 18, Recharts, Chart.js
 - **Visualization**: CSS animations, responsive design
 
-## 📝 License
+## License
 
 MIT License - feel free to use this for learning and research!
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Kuhn Poker on Wikipedia](https://en.wikipedia.org/wiki/Kuhn_poker)
 - [An Introduction to Counterfactual Regret Minimization](http://modelai.gettysburg.edu/2013/cfr/)

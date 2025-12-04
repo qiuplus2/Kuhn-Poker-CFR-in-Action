@@ -128,21 +128,7 @@ python main.py --interactive
 - Probability distributions for Pass/Bet actions
 - Comparison with optimal play
 
-## API Endpoints
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/train` | POST | Train CFR for N iterations |
-| `/api/metrics` | GET | Get training history metrics |
-| `/api/play` | POST | Play a game against CFR bot |
-
-
-
-## Technologies
-
-- **Backend**: Python, Flask, NumPy, Flask-CORS
-- **Frontend**: React 18, Recharts, Chart.js
-- **Visualization**: CSS animations, responsive design
 
 ## License
 

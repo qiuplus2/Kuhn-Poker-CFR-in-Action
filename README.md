@@ -147,10 +147,3 @@ python main.py --interactive
 ## License
 
 MIT License - feel free to use this for learning and research!
-
-## Acknowledgments
-
-- [Kuhn Poker on Wikipedia](https://en.wikipedia.org/wiki/Kuhn_poker)
-- [An Introduction to Counterfactual Regret Minimization](http://modelai.gettysburg.edu/2013/cfr/)
-- The game theory and poker AI research community
-
